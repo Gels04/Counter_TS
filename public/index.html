@@ -5,14 +5,30 @@
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
+    <link rel="stylesheet" type="text/css" href="/public/index.css" />
+    <title>Counter</title>
   </head>
   <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
+    <script type="module" src="/dist/index.js" defer></script>
+
+    <main>
+      <div class="container">
+        <h1 id="title">Counter</h1>
+
+      <h2 class="black" id="number">0</h2>
+
+      <div class="buttonContainer">
+        <button id="downButton">Down</button>
+        <button id="resetButton">Reset</button>
+        <button id="upButton">Up</button>
+      </div>
+      </div>
+    </main>
+
+
+  </body>
+</html>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -23,5 +39,3 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
-</html>
